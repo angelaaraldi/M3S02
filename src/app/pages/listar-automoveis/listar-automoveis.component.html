@@ -1,0 +1,11 @@
+<app-cabecalho></app-cabecalho>
+<div>
+    <h1>Automóveis</h1>
+    <form (ngSubmit)="filtrar()" [formGroup]="form">
+        <label for="automovel">Pesquise um modelo:</label>
+        <input type="text" name="automovel" formControlName="automovel"/>
+        <button type="submit">Pesquisar</button>
+    </form>
+    <app-listagem></app-listagem>
+    <app-rodape></app-rodape>
+</div>

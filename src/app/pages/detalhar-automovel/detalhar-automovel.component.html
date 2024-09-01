@@ -1,0 +1,12 @@
+<app-cabecalho></app-cabecalho>
+<div>
+    <h1>{{automovel.name}}</h1>
+    <img src="{{automovel.image}}" alt="{{automovel.name}}" width="300px">
+    <p>Ano de fabricação: {{automovel.year}}</p>
+    <p>Tipo do modelo: {{automovel.type}}</p>
+    <p>Preço: {{automovel.pricePerDay}}</p>
+    <p>Descrição: {{automovel.description}}</p>
+    <button>Alugar</button>
+    <button (click)="favoritar()">❤️</button>
+    <app-rodape></app-rodape>
+</div>
